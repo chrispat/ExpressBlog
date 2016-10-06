@@ -1,4 +1,4 @@
 @ECHO OFF
-rem comment
+rem comment and again
 set DEBUG=express:*
 node .\bin\www
