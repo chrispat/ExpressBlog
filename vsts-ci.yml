@@ -4,7 +4,7 @@
 # https://aka.ms/yaml
 variables:
   # creates a counter called versioncounter and seeds it at 100 and then assigns the value to a variable named version.
-  version: $[counter('versioncounter', 100) 
+  version: $[counter('versioncounter', 100)]
   
 queue: 'Hosted Linux Preview'
 
