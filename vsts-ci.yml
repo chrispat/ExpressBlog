@@ -3,8 +3,11 @@
 # Add steps that analyze code, save build artifacts, deploy, and more:
 # https://aka.ms/yaml
 variables:
+  major: 2
+  minor: 1
+  patch_counter: patchversion-$(minor)
   # creates a counter called versioncounter and seeds it at 100 and then assigns the value to a variable named version.
-  version: $[counter('versioncounter', 100)]
+  version: $[counter(variables['patch_counter'], 100)]
   
 name: $(Date:yyyyMMdd).$(version)
 queue: 'Hosted Linux Preview'
