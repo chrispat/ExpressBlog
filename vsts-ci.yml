@@ -10,4 +10,4 @@ queue: 'Hosted Linux Preview'
 
 steps:
 - script: |
-    echo "The new version is $(version)
+    echo "The new version is $(version)"
